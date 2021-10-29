@@ -13,6 +13,7 @@ runs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
+        repository: ${{ inputs.repo_name }}
     - name: setup python
       uses: actions/setup-python@v2
       with:
